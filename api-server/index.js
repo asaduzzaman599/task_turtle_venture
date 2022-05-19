@@ -80,7 +80,7 @@ const verifyToken = (req, res, next) => {
 
         const stationCollection = client.db("stationDB").collection("station");
 
-        app.post('/station', verifyToken, async (req, res) => {
+        app.post('/station', /* verifyToken, */ async (req, res) => {
             const station = req.body
             if (station.name && station.channel && station.other) {
                 const result = await stationCollection.insertOne(station)
@@ -88,11 +88,11 @@ const verifyToken = (req, res, next) => {
             }
             res.send({ status: false, message: "Provide all info" })
         })
-        app.get('/station', verifyToken, async (req, res) => {
+        app.get('/station', /* verifyToken, */ async (req, res) => {
             const result = await stationCollection.find({}).toArray()
             res.send(result)
         })
-        app.delete('/station/:id', verifyToken, async (req, res) => {
+        app.delete('/station/:id', /* verifyToken, */ async (req, res) => {
             const { id } = req.params
             const query = {
                 _id: ObjectId(id)
@@ -101,7 +101,7 @@ const verifyToken = (req, res, next) => {
             res.send(result)
         })
 
-        app.put('/station/:id', verifyToken, async (req, res) => {
+        app.put('/station/:id', /* verifyToken, */ async (req, res) => {
             const { id } = req.params
             const body = req.body;
             const filter = {
