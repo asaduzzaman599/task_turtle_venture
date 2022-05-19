@@ -23,7 +23,7 @@ admin.initializeApp({
 const uri = `mongodb+srv://${process.env.USER_DB}:${process.env.PASSWORD_DB}@cluster0.sfale.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
-//creating user
+//creating user with email and password
 app.post('/signup', async (req, res) => {
     const body = req.body
     console.log(body)
@@ -80,27 +80,43 @@ const verifyToken = (req, res, next) => {
 
         const stationCollection = client.db("stationDB").collection("station");
 
+        //insert station
         app.post('/station', /* verifyToken, */ async (req, res) => {
             const station = req.body
             if (station.name && station.channel && station.other) {
                 const result = await stationCollection.insertOne(station)
-                res.send(result)
+                if (result.insertedId) {
+                    res.send({ success: true, result })
+                } else {
+                    res.send({ success: false, message: "Not Inserted" })
+                }
             }
             res.send({ status: false, message: "Provide all info" })
         })
+
+        //get all and pass as response
         app.get('/station', /* verifyToken, */ async (req, res) => {
             const result = await stationCollection.find({}).toArray()
             res.send(result)
         })
+
+
+        //get a station
         app.delete('/station/:id', /* verifyToken, */ async (req, res) => {
             const { id } = req.params
             const query = {
                 _id: ObjectId(id)
             }
             const result = await stationCollection.deleteOne(query)
-            res.send(result)
+            if (result.deletedCount) {
+                res.send({ success: true, result })
+            } else {
+                res.send({ success: false, message: "Something is Wrong" })
+            }
         })
 
+
+        //update a station
         app.put('/station/:id', /* verifyToken, */ async (req, res) => {
             const { id } = req.params
             const body = req.body;
@@ -112,7 +128,11 @@ const verifyToken = (req, res, next) => {
                 $set: body,
             }
             const result = await stationCollection.updateOne(filter, updateDoc, options)
-            res.send(result)
+            if (result.modifiedCount) {
+                res.send({ success: true, result })
+            } else {
+                res.send({ success: false, message: "Something is Wrong" })
+            }
         })
 
     } finally { }
