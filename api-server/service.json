@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "radio-widget-asaduzzaman599",
+  "private_key_id": "dbdc1893edac1c3e1baac57660f06c87ec762bd3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBWWC9yCeYi7I9\nH+iOdZu9YyibBgEvAIEn/XfadrJIMueMnwPq1MHAysZrLHylpF8Yv7XGfKM9vZ89\npSF32HOt+jYdgM5BJDJ83krxXxlqgHPHhbLat3NPz8fKfrt+aoiG0Qi47sptIQyD\ns/6KPj3pUIkrIdw0DTlj87ZX0HebRNm8TMHexexsGkQbg4LQmymUsB+hCp6/fO4Y\nzDpzXVSQ7oDjrbbZVwXJ5qHZwSdfpsthHbyaTUzAEhy9yTEFa440dsnIPLD6ksLA\nddhlt8amOKUi4Wg8hpFp3FCQi3CyMyFuYWwiJm753Ek/UsPxqr/1O+NEzg8mHoa1\n92AHbDz3AgMBAAECggEANWOJL45jxJ8abf9wF1pJUV/emAPt8r0YbOL0I+pvqzkH\nMBC+o6rw/1veszxbBOAg9DQHrRHAf61rGboNxkqKEsnLBJWLHniwykMVfZXtbjef\nAMKd0wAiArFUsUkSW8NuBJAW8P3a/oxIKNvcVu796H15CuR0KhlWtg9XU+M4C7LZ\nmpjW2xNPDQiWG21o1NToR1oPULYYYvJAnWfqukGVUFyRGz7K6EcFGbH2aHxBtuUV\nAK23C9iX808+x5jlMy1PyHC0btSx0LpUX1qtay706rjSPbsJPrKITzX2uX/toYF0\nfql5kDmZ0pf1vQY8lPYy61dtNw0iXXtnH8US1EK64QKBgQDvkbkBxBV/7o9rfu04\nqk6QpIUnhxi5oC4c5B0dKeEz2tT5kxfqxd3zwqrO5DJkKoEv2LolfWNYYlBFrf8u\nuSvXPL9IG6/nmIZvx84j38GDwj0gLINW2knKFigXlASkXkFZAP8T1L/oFq0QjfBE\nkScJ+W5VGv2OgIL1dqymLuaGlwKBgQDOnCNWO+NtQaxFpQve5wiAkw0z6l1kWOG2\nXizIKnNMqGhftvMloPWA9D3Eiadf2S1VOogFZ4NKQeLUA+6UishlysnABhECxNZc\nfw1WA2ZSCB+FvyviS1D8k9xtcuTtJDEv3vyzMnTV1ezglucwaopRpIsNaQ0JPFOW\nzefl3yYooQKBgFXeA1PQtmwOU7WR3vEKifJqJZfPYltWQHD2ikDju+ZcLy3tPQtX\nNICka5iQTkd8vKUrpzy8vpj1VBRFk0tp737MNTthQSFfmAAEu6w8DR5uxn37tm+w\n+fXHD0O0OB258u413zd6b/Z9+jYOyemppTZ8AsHaVLt48HeOu78s3E+tAoGBAK7O\nilNWvlhdXT1bpEyG2rm2MVCAdV4GmYor6eW9jOoJ/q0k5Fos8iqV+4DDGrrMzD81\nE4rHBt0YG6tYXE6PkXgWeFYgi9n04o1F7emdXMABIXKOyblgEfhxvelYcXp2yasA\nFnwjL5kQs6dd5eMf8UGcXw4MmLv8r5iDRDZIdEehAoGAMtdyIJ8+kpCm2YPjTtDq\n41XdyCxCwWrUYaE1Y17Eb3NatIrYg3iZha808h93nuqOTmpkUsTdQH0kiK5ULKDs\nbIzA6Qfsh53FZHb5WthIMG9LfjXMZawNJyHFKx45riJ1tRIyO1PyxkHsBHvg7f4u\n5AyfI9hHC8VjIbIdG9PBkxM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fytan@radio-widget-asaduzzaman599.iam.gserviceaccount.com",
+  "client_id": "109784456532533443333",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fytan%40radio-widget-asaduzzaman599.iam.gserviceaccount.com"
+}
