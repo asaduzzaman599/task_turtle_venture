@@ -1,0 +1,32 @@
+[
+    {
+        "_id":1,
+        "name":"Putin FM",
+        "channel":66,
+        "other":6
+    },
+    {
+        "_id":2,
+        "name":"Dribbble FM",
+        "channel":101,
+        "other":2
+    },
+    {
+        "_id":3,
+        "name":"Doge FM",
+        "channel":99,
+        "other":4
+    },
+    {
+        "_id":4,
+        "name":"Ballads FM",
+        "channel":87,
+        "other":1
+    },
+    {
+        "_id":5,
+        "name":"Maximum FM",
+        "channel":142,
+        "other":2
+    }
+]
