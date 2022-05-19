@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background: #F6F6F6;
+        }
+        .content img{
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div 
+    class="content">
+    <img src="./images/bulb-off.png" onclick="bulbToggle()" alt="">
+    <h2>Click on the Bulb Turn ON/OFF</h2>
+
+    </div>
+    <script >
+        
+        let isOn = false
+        const bulbToggle = () => {
+            isOn = !isOn
+            const img = document.querySelector('img')
+
+            isOn ? img.src = '/images/bulb-off.png' : img.src = '/images/bulb-on.png'
+}
+
+    </script>
+</body>
+</html>
